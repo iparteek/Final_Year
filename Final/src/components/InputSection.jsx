@@ -9,7 +9,7 @@ const InputSection = ({ onGenerate }) => {
     if (!inputValue.trim()) return;
     setLoading(true);
     try {
-      const response = await fetch("https://final-year-1-86ft.onrender.com", {
+      const response = await fetch("https://final-year-2-zx99.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: inputValue }),
