@@ -9,7 +9,7 @@ const InputSection = ({ onGenerate }) => {
     if (!inputValue.trim()) return;
     setLoading(true);
     try {
-      const response = await fetch("https://final-year-1-86ft.onrender.com/generate-face/", {
+      const response = await fetch("https://final-year-1-86ft.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: inputValue }),
